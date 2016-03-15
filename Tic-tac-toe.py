@@ -1,23 +1,23 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 __date__ =  'March 14, 2016'
 __author__ = 'Nasy'
 
 import random
 
 board = [[0 for i in range(3)] for j in range(3)]
-print board
+print(board)
 CHESS = [' ', 'o', 'x']
 
 
 def show_board():
-    print '    a   b   c  '
+    print('    a   b   c  ')
     for i in range(3):
-        print '  |---|---|---|'
-        print i+1, '|',
+        print('  |---|---|---|')
+        print(i+1, '| ', end='')
         for j in range(3):
-            print '%s |' % CHESS[board[i][j]],
-        print
-    print '  |---|---|---|'
+            print('%s | ' % CHESS[board[i][j]], end='')
+        print()
+    print('  |---|---|---|')
 
 
 ROW = {'1': 0, '2': 1, '3': 2}
@@ -25,10 +25,10 @@ COL = {'a': 0, 'b': 1, 'c': 2}
 
 
 def move_man():
-    print 'Your turn...'
+    print('Your turn...')
     while True:
         try:
-            move = raw_input('choose a position (e.g. a1/a2/b3/c2...):\n')
+            move = input('choose a position (e.g. a1/a2/b3/c2...):\n')
             pos_row = ROW[move[1]]
             pos_col = COL[move[0]]
             if board[pos_row][pos_col] == 0:
@@ -39,7 +39,7 @@ def move_man():
 
 
 def move_AI():
-    print 'AI\'s turn...'
+    print('AI\'s turn...')
     while True:
         r = random.randint(0, 2)
         c = random.randint(0, 2)
@@ -51,25 +51,25 @@ def move_AI():
 def is_finished():
     # row
     if [1, 1, 1] in board:
-        print 'You win!'
+        print('You win!')
         return True
     if [2, 2, 2] in board:
-        print 'AI wins!'
+        print('AI wins!')
         return True
     # col
     for i in range(3):
         if board[0][i] == board[1][i] == board[2][i] == 1:
-            print 'You win!'
+            print('You win!')
             return True
         if board[0][i] == board[1][i] == board[2][i] == 2:
-            print 'AI wins!'
+            print('AI wins!')
             return True
     # diagonal
         if (board[0][0] == board[1][1] == board[2][2] == 1) or (board[2][0] == board[1][1] == board[0][2] == 1):
-            print 'You win!'
+            print('You win!')
             return True
         if (board[0][0] == board[1][1] == board[2][2] == 2) or (board[2][0] == board[1][1] == board[0][2] == 2):
-            print 'AI wins!'
+            print('AI wins!')
             return True
     # draw game
     draw = True
@@ -77,7 +77,7 @@ def is_finished():
         if 0 in board[j]:
                 draw = False
         if draw:
-            print 'Draw game!'
+            print('Draw game!')
             return True
         return False
 
