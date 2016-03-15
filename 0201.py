@@ -1,6 +1,6 @@
-##
-# 2016.3.13
-# by Nasy
+#!/usr/bin/env python
+__date__ = 'March 13, 2016'
+__author__ = 'Nasy'
 
 from pylab import *
 t = np.linspace(1, 20, 20)
