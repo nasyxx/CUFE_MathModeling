@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-# Gomoku
+# -*- coding: utf-8 -*-
+"""
+Gomoku board game
+"""
 # not finished yet
 __date__ = 'March 15, 2016'
 __author__ = 'Nasy'

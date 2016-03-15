@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-__date__ =  'March 14, 2016'
+"""
+井字棋
+"""
+__date__ = 'March 14, 2016'
 __author__ = 'Nasy'
 
 import random
@@ -13,7 +16,7 @@ def show_board():
     print('    a   b   c  ')
     for i in range(3):
         print('  |---|---|---|')
-        print(i+1, '| ', end='')
+        print(i + 1, '| ', end='')
         for j in range(3):
             print('%s | ' % CHESS[board[i][j]], end='')
         print()
