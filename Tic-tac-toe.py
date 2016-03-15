@@ -1,13 +1,11 @@
-# March 14, 2016
-# Nasy
+#!/usr/bin/env python
+__date__ =  'March 14, 2016'
+__author__ = 'Nasy'
+
 import random
 
-board = [
-    [0, 0, 0],
-    [0, 0, 0],
-    [0, 0, 0],
-]
-
+board = [[0 for i in range(3)] for j in range(3)]
+print board
 CHESS = [' ', 'o', 'x']
 
 
