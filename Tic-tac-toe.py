@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-井字棋
+Tic-tac-toe
 """
 __date__ = 'March 14, 2016'
 __author__ = 'Nasy'
@@ -9,7 +9,7 @@ import random
 
 board = [[0 for i in range(3)] for j in range(3)]
 print(board)
-CHESS = [' ', 'o', 'x']
+CHESS = [' ', '●', '○']
 
 
 def show_board():
@@ -37,11 +37,11 @@ def move_man():
             if board[pos_row][pos_col] == 0:
                 board[pos_row][pos_col] = 1
                 return
-        except:
+        except KeyError:
             pass
 
 
-def move_AI():
+def move_ai():
     print('AI\'s turn...')
     while True:
         r = random.randint(0, 2)
@@ -90,6 +90,6 @@ while not is_finished():
     if yourTurn:
         move_man()
     else:
-        move_AI()
+        move_ai()
     show_board()
     yourTurn = not yourTurn
