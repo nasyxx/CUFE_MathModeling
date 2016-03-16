@@ -66,7 +66,7 @@ pylab.ylabel('Population')
 pylab.subplot(3, 2, 6)
 a[0] = 0.1
 r = 4
-for i in range(100):
+for i in range(199):
     a[i + 1] = r * a[i] * (1 - a[i])
 pylab.scatter(t, a, c='black')
 pylab.xlim(0, 200)
