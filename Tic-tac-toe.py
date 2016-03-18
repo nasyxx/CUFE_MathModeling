@@ -68,12 +68,12 @@ def is_finished():
             print('AI wins!')
             return True
     # diagonal
-        if (board[0][0] == board[1][1] == board[2][2] == 1) or (board[2][0] == board[1][1] == board[0][2] == 1):
-            print('You win!')
-            return True
-        if (board[0][0] == board[1][1] == board[2][2] == 2) or (board[2][0] == board[1][1] == board[0][2] == 2):
-            print('AI wins!')
-            return True
+    if (board[0][0] == board[1][1] == board[2][2] == 1) or (board[2][0] == board[1][1] == board[0][2] == 1):
+        print('You win!')
+        return True
+    if (board[0][0] == board[1][1] == board[2][2] == 2) or (board[2][0] == board[1][1] == board[0][2] == 2):
+        print('AI wins!')
+        return True
     # draw game
     draw = True
     for j in range(3):
