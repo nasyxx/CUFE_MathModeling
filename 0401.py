@@ -6,24 +6,15 @@
 __date__ = 'March 23, 2016'
 __author__ = 'Nasy'
 
-import pylab
+import matplotlib.pyplot as plt
+import numpy as np
 
-x = pylab.np.linspace(20, 40, 5)
+x = np.linspace(20, 40, 5)
+y = np.array([20, 28, 40.5, 52.5, 72])
 
-y = pylab.np.array([20, 28, 40.5, 52.5, 72])
+y1 = np.array([18, 25, 36, 47, 64])
+y2 = np.array([22, 31, 45, 58, 80])
 
-# y1 = [2, 3, 4.5, 5.5, 8]
-
-# y2 = [2, 3, 4.5, 5.5, 8]
-
-y1 = pylab.np.array([18, 25, 36, 47, 64])
-
-y2 = pylab.np.array([22, 31, 45, 58, 80])
-
-# for i in range(5):
-#     y3[i] = y[i] - y1[i]
-#     y4[i] = y2[i] - y[i]
-
-pylab.errorbar(x, y, [y - y1, y2 - y],ecolor='red',color='black')
-pylab.xlim([15, 45])
-pylab.show()
+plt.errorbar(x, y, [y - y1, y2 - y], ecolor='red', color='black')
+plt.xlim([15, 45])
+plt.show()
