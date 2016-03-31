@@ -15,6 +15,8 @@ y = np.array([20, 28, 40.5, 52.5, 72])
 y1 = np.array([18, 25, 36, 47, 64])
 y2 = np.array([22, 31, 45, 58, 80])
 
+plt.xkcd()
+
 plt.errorbar(x, y, [y - y1, y2 - y], ecolor='red', color='black')
 plt.xlim([15, 45])
 plt.show()

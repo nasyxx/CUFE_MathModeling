@@ -8,7 +8,7 @@ __author__ = 'Nasy'
 
 import matplotlib.pyplot as plt
 import numpy as np
-
+plt.xkcd()
 t = np.linspace(1, 9, 9)
 x = np.zeros(9)
 y = np.zeros(9)

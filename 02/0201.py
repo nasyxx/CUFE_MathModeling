@@ -17,6 +17,8 @@ p[0] = 9.6
 for i in range(19):
     p[i + 1] = k * (665 - p[i]) * p[i] + p[i]
 
+plt.xkcd()
 plt.scatter(t, p)
 plt.axis([0, 21, 0, 700])
+plt.title('0201~')
 plt.show()
