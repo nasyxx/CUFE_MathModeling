@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-ヽ(。_°)ノ 这是第五个剑魔
+ヽ(。_°)ノ 这是第五个剑魔 plotly 版本
 """
-__date__ = 'March 23, 2016'
+__date__ = 'March 30, 2016'
 __author__ = 'Nasy'
 
 import plotly.offline as py
