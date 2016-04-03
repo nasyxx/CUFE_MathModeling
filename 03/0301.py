@@ -15,7 +15,6 @@ a = np.zeros(200)
 
 plt.subplot(3, 2, 1)
 a[0] = 0.1
-print()
 r = 1.546
 for i in range(199):
     a[i + 1] = r * a[i] * (1 - a[i])
