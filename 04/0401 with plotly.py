@@ -1,10 +1,20 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-ヽ(。_°)ノ 这是第五个剑魔 plotly 版本
+@Version: 1
+@Author: Nasy
+@Date: March 30, 2016
+@email: sy_n@me.com
+@file: 0401 with plotly.py
+@license: MIT
 """
-__date__ = 'March 30, 2016'
+
+__version__ = '1'
 __author__ = 'Nasy'
+__date__ = 'March 30, 2016'
+__email__ = 'sy_n@me.com'
+__file__ = '0401 with plotly.py'
+__license__ = 'MIT'
 
 import plotly.offline as py
 import plotly.graph_objs as go
