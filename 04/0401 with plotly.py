@@ -8,13 +8,13 @@
 @file: 0401 with plotly.py
 @license: MIT
 """
-
 __version__ = '1'
 __author__ = 'Nasy'
 __date__ = 'March 30, 2016'
 __email__ = 'sy_n@me.com'
 __file__ = '0401 with plotly.py'
 __license__ = 'MIT'
+
 
 import plotly.offline as py
 import plotly.graph_objs as go

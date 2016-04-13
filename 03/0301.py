@@ -6,9 +6,12 @@
 __date__ = 'March 16, 2016'
 __author__ = 'Nasy'
 
+import matplotlib
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 import numpy as np
 plt.xkcd()
+
 t = np.linspace(1, 200, 200)
 a = np.zeros(200)
 
